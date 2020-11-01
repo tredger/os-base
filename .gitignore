@@ -8,3 +8,6 @@
 /Dockerfile
 *.swp
 /.dapper
+ci.log
+/Dockerfile.dapper*
+!/Dockerfile.dapper
