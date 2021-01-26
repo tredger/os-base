@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2020.02.8 Configuration
+# Buildroot 2020.02.11 Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_9=y
@@ -172,7 +172,7 @@ BR2_KERNEL_HEADERS_5_4=y
 # BR2_KERNEL_HEADERS_CUSTOM_TARBALL is not set
 # BR2_KERNEL_HEADERS_CUSTOM_GIT is not set
 BR2_KERNEL_HEADERS_LATEST=y
-BR2_DEFAULT_KERNEL_HEADERS="5.4.77"
+BR2_DEFAULT_KERNEL_HEADERS="5.4.95"
 BR2_PACKAGE_LINUX_HEADERS=y
 
 #
@@ -1871,7 +1871,7 @@ BR2_PACKAGE_LIBOPENH264_ARCH_SUPPORTS=y
 #
 
 #
-# mediastreamer needs a toolchain w/ threads, C++
+# mediastreamer needs a toolchain w/ threads, C++, dynamic library
 #
 # BR2_PACKAGE_X264 is not set
 
@@ -1897,6 +1897,10 @@ BR2_PACKAGE_LIBOPENH264_ARCH_SUPPORTS=y
 
 #
 # batman-adv needs a Linux kernel to be built
+#
+
+#
+# belle-sip needs a toolchain w/ threads, C++, dynamic library, wchar
 #
 # BR2_PACKAGE_C_ARES is not set
 BR2_PACKAGE_CANFESTIVAL_ARCH_SUPPORTS=y
@@ -1993,6 +1997,10 @@ BR2_PACKAGE_CANFESTIVAL_ARCH_SUPPORTS=y
 # BR2_PACKAGE_LIBNICE is not set
 BR2_PACKAGE_LIBNL=y
 # BR2_PACKAGE_LIBNL_TOOLS is not set
+
+#
+# libnpupnp needs a toolchain w/ C++, threads, gcc >= 4.9
+#
 # BR2_PACKAGE_LIBOAUTH is not set
 # BR2_PACKAGE_LIBOPING is not set
 # BR2_PACKAGE_LIBOSIP2 is not set
@@ -2020,7 +2028,6 @@ BR2_PACKAGE_LIBTIRPC=y
 # libtorrent-rasterbar needs a toolchain w/ C++, threads, wchar, gcc >= 4.9
 #
 # BR2_PACKAGE_LIBUPNP is not set
-# BR2_PACKAGE_LIBUPNP18 is not set
 
 #
 # libupnpp needs a toolchain w/ C++, threads, gcc >= 4.9
@@ -2123,6 +2130,10 @@ BR2_PACKAGE_LIBTIRPC=y
 # bctoolbox needs a toolchain w/ C++, threads
 #
 # BR2_PACKAGE_BDWGC is not set
+
+#
+# belr needs a toolchain w/ threads, C++
+#
 
 #
 # boost needs a toolchain w/ C++, threads, wchar
@@ -2547,7 +2558,7 @@ BR2_PACKAGE_DHCPCD=y
 #
 
 #
-# gerbera needs a toolchain w/ C++, threads, gcc >= 7
+# gerbera needs a toolchain w/ C++, threads, wchar, gcc >= 8
 #
 # BR2_PACKAGE_GESFTPSERVER is not set
 # BR2_PACKAGE_GLORYTUN is not set
@@ -2625,7 +2636,7 @@ BR2_PACKAGE_IPROUTE2=y
 # BR2_PACKAGE_LINKS is not set
 
 #
-# linphone needs a toolchain w/ threads, C++
+# linphone needs a toolchain w/ threads, C++, dynamic library, wchar
 #
 # BR2_PACKAGE_LINUX_ZIGBEE is not set
 # BR2_PACKAGE_LINUXPTP is not set
@@ -3263,6 +3274,7 @@ BR2_PACKAGE_HOST_RUSTC_ARCH="x86_64"
 #
 # Legacy options removed in 2020.02
 #
+# BR2_PACKAGE_LIBUPNP18 is not set
 # BR2_PACKAGE_PYTHON_PYCRYPTO is not set
 # BR2_PACKAGE_JAMVM is not set
 # BR2_PACKAGE_CLASSPATH is not set
