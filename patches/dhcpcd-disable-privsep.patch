@@ -1,0 +1,12 @@
+diff --git a/package/dhcpcd/Config.in b/package/dhcpcd/Config.in
+index 3ebacb3..203d203 100644
+--- a/package/dhcpcd/Config.in
++++ b/package/dhcpcd/Config.in
+@@ -13,7 +13,6 @@ if BR2_PACKAGE_DHCPCD
+ 
+ config BR2_PACKAGE_DHCPCD_ENABLE_PRIVSEP
+ 	bool
+-	default y
+ 	depends on BR2_USE_MMU
+ 	# Audit headers were only added in recent kernels for some arches
+ 	depends on !(BR2_arceb || BR2_arcle) || \
